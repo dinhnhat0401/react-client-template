@@ -1,3 +1,15 @@
+DOM related:
+react-helmet: This reusable React component will manage all of your changes to the document head.
+react-router-dom
+CSS: styled-components
+Typechecking: prop-types
+Linter: stylelint, eslint, prettier
+Testing: react-testing-library
+Locale:
+react-intl: Internationalize your web apps on the client & server.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
