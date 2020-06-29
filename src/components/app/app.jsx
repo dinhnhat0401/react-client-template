@@ -16,7 +16,7 @@ import { Switch, Route, BrowserRouter } from "react-router-dom";
 // import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Header from "../Header";
 import Footer from "../Footer";
-
+import LayoutFooter from "../../common/LayoutFooter";
 // import GlobalStyle from "../../global-styles";
 
 const AppWrapper = styled.div`
@@ -42,12 +42,7 @@ export default function App() {
           />
         </Helmet>
         <Header />
-        <Switch>
-          <Route exact path="/" component={App} />
-          <Route path="/features" component={App} />
-          <Route path="" component={App} />
-        </Switch>
-        <Footer />
+        <LayoutFooter />
         {/* <GlobalStyle /> */}
       </AppWrapper>
     </BrowserRouter>

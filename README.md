@@ -1,7 +1,9 @@
 DOM related:
 react-helmet: This reusable React component will manage all of your changes to the document head.
 react-router-dom
-CSS: styled-components
+CSS:
+styled-components
+@material-ui
 Typechecking: prop-types
 Linter: stylelint, eslint, prettier
 Testing: react-testing-library
