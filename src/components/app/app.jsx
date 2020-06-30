@@ -14,9 +14,9 @@ import { Switch, Route, BrowserRouter } from "react-router-dom";
 // import HomePage from 'containers/HomePage/Loadable';
 // import FeaturePage from 'containers/FeaturePage/Loadable';
 // import NotFoundPage from 'containers/NotFoundPage/Loadable';
-import Header from "../Header";
-import Footer from "../Footer";
-import LayoutFooter from "../../common/LayoutFooter";
+// import Header from "../appbar";
+// import Footer from "../Footer";
+import Landing from "../Landing/index";
 // import GlobalStyle from "../../global-styles";
 
 const AppWrapper = styled.div`
@@ -30,21 +30,22 @@ const AppWrapper = styled.div`
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <AppWrapper>
-        <Helmet
-          titleTemplate="%s - React.js Boilerplate"
-          defaultTitle="React.js Boilerplate"
-        >
-          <meta
-            name="description"
-            content="A React.js Boilerplate application"
-          />
-        </Helmet>
-        <Header />
-        <LayoutFooter />
-        {/* <GlobalStyle /> */}
-      </AppWrapper>
-    </BrowserRouter>
+    // <BrowserRouter>
+    //   <AppWrapper>
+    //     <Helmet
+    //       titleTemplate="%s - React.js Boilerplate"
+    //       defaultTitle="React.js Boilerplate"
+    //     >
+    //       <meta
+    //         name="description"
+    //         content="A React.js Boilerplate application"
+    //       />
+    //     </Helmet>
+    //     <Header />
+    //     <LayoutFooter />
+    //     {/* <GlobalStyle /> */}
+    //   </AppWrapper>
+    // </BrowserRouter>
+    <Landing />
   );
 }
