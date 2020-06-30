@@ -1,17 +1,19 @@
 import React from "react";
-import { Switch, Route, BrowserRouter } from "react-router-dom";
+import { Link, BrowserRouter } from "react-router-dom";
 
-import Landing from "../Landing/index";
-import NotFoundPage from "../NotFoundPage/index";
+import Banner from "./banner.jpg";
 
 function AppBar() {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/landing" component={Landing} />
-        <Route path="/abc" component={NotFoundPage} />
-      </Switch>
-    </BrowserRouter>
+    <div>
+      <a href="https://www.reactboilerplate.com/">
+        <img src={Banner} alt="react-boilerplate - Logo" />
+      </a>
+      <BrowserRouter>
+        <Link to="/">Link 1</Link>
+        <Link to="/features">Link 2</Link>
+      </BrowserRouter>
+    </div>
   );
 }
 
