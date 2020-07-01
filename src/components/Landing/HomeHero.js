@@ -4,48 +4,48 @@
  * Copyright (c) 2015-present Kriasoft | MIT License
  */
 
-import React from 'react';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
+import React from "react";
+import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
 
-import LoginButton from '../common/LoginButton';
+import LoginButton from "../LoginButton/index";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     ...theme.mixins.content,
-    paddingTop: '2rem',
-    paddingBottom: '3rem',
-    [theme.breakpoints.up('sm')]: {
-      paddingTop: '3rem',
-      paddingBottom: '4rem',
+    paddingTop: "2rem",
+    paddingBottom: "3rem",
+    [theme.breakpoints.up("sm")]: {
+      paddingTop: "3rem",
+      paddingBottom: "4rem",
     },
   },
   title: {
-    paddingBottom: '1rem',
+    paddingBottom: "1rem",
     fontWeight: 300,
-    fontSize: '1.75rem',
+    fontSize: "1.75rem",
     color: theme.palette.common.white,
-    [theme.breakpoints.up('sm')]: {
-      fontSize: '2.5rem',
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "2.5rem",
     },
   },
   subTitle: {
-    paddingBottom: '1rem',
+    paddingBottom: "1rem",
     color: theme.palette.common.white,
     fontWeight: 300,
-    fontSize: '1.125rem',
-    [theme.breakpoints.up('sm')]: {
-      fontSize: '1.5rem',
+    fontSize: "1.125rem",
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "1.5rem",
     },
   },
   actions: {
-    paddingTop: '1rem',
+    paddingTop: "1rem",
   },
   button: {
-    boxShadow: 'none',
-    backgroundColor: '#555',
-    '&:hover': {
-      backgroundColor: '#666',
+    boxShadow: "none",
+    backgroundColor: "#555",
+    "&:hover": {
+      backgroundColor: "#666",
     },
   },
 }));
