@@ -46,10 +46,10 @@
     "browser": true,
     "jest": true
   },
-  "extends": "eslint:recommended",
+  "extends": ["airbnb", "prettier", "prettier/react"],
   "ecmaFeatures": {
     "jsx": true,
     "experimentalObjectRestSpread": true
   },
-  "plugins": ["react"]
+  "plugins": ["react", "prettier"]
 }
