@@ -27,7 +27,14 @@ const RouteWithLayout = (props) => {
       />
     );
   } else {
-    return <Redirect to="/sign-in" />;
+    return (
+      <Redirect
+        to={{
+          pathname: '/sign-in',
+          state: { from: props.location },
+        }}
+      />
+    );
   }
 };
 
