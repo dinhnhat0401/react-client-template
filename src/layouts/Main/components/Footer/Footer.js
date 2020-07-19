@@ -4,20 +4,20 @@ import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Link } from '@material-ui/core';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
-    padding: theme.spacing(4)
-  }
+    padding: theme.spacing(4),
+  },
 }));
 
-const Footer = props => {
+const Footer = (props) => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
 
   return (
     <div {...rest} className={clsx(classes.root, className)}>
-      <Typography variant="body">
+      <Typography>
         &copy;{' '}
         <Link component="a" href="https://devias.io/" target="_blank">
           Devias IO
@@ -33,7 +33,7 @@ const Footer = props => {
 };
 
 Footer.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Footer;

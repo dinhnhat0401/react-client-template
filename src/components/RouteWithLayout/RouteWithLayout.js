@@ -3,7 +3,7 @@ import { Route, Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 // TODO: remove this fake
-import fakeAuth from '../../views/SignIn/Auth';
+import { fakeAuth } from '../../business-logic';
 
 const RouteWithLayout = (props) => {
   const { layout: Layout, component: Component, ...rest } = props;
