@@ -3,7 +3,7 @@ import { Route, Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 // TODO: remove this fake
-import fakeAuth from '../../views/SignIn/Auth';
+import { fakeAuth } from '../../business-logic';
 
 const RouteWithLayout = (props) => {
   const { layout: Layout, component: Component, ...rest } = props;
@@ -27,7 +27,14 @@ const RouteWithLayout = (props) => {
       />
     );
   } else {
-    return <Redirect to="/sign-in" />;
+    return (
+      <Redirect
+        to={{
+          pathname: '/sign-in',
+          state: { from: props.location },
+        }}
+      />
+    );
   }
 };
 
